@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef5ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.sidebar {
+  width: 15%;
+  background: linear-gradient(to bottom, #483EFF, #3A3CF5);
+  padding: 1rem;
+  color: white;
+  position:absolute;
+  height:50%;
+  width: 10%;
+ 
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  opacity: 0.7;
+  cursor: pointer;
+  
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display:flex;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  justify-content:center;
+  align-items: center;
+  font-weight: bold; 
+}
+
+.step.active .circle {
+  background: #BEE2FD;
+  color: black;
+  border-color: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.next-btn {
+  align-self: flex-end;
+  padding: 12px 20px;
+  background-color: #02295a;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #021740;
+}
+
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+
+#nextBtn {
+  background-color: #032c5a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.step {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.step:hover {
+  opacity: 1;
+
+} 
+.form-container{
+  margin-left: 70%;
+  height: 50vh;
+  width: 100%;
+
+}
+h1{
+  margin-top: 5%;
+}
+
